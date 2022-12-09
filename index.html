@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./test.js" defer></script>
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            margin:auto;
+            flex-direction: column;
+            width: fit-content;
+            align-items: center;
+            justify-content: center;
+        }
+        fieldset {
+            display: flex;
+            flex-direction: column;
+        }
+        div{
+            margin-top: 1rem;
+        }
+        legend {
+            margin-bottom: 1rem;
+        }
+        label {
+            margin: 0.4rem;
+            font-weight: bold;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .cont{
+            margin: 15px;
+            border: 1px solid red;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            background-color: rgb(90, 161, 90);
+        }
+        .cont > span {
+            margin: 10px;
+            padding: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <form id="books">
+        <legend>Submit form:</legend>
+        <fieldset>
+            <label for="fname">Title:</label>
+            <input type="text" id="title" required minlength="2" maxlength="255"/>
+            <label for="author">Author:</label>
+            <input type="text" id="author" required minlength="2" maxlength="255"/>
+            <label for="age">Genre:</label>
+            <input type="text" id="genre" required minlength="2" maxlength="255"/>
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+</div>
+    <main>
+
+    </main>
+</body>
+</html>
